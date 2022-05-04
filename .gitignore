@@ -1,0 +1,5 @@
+.idea/
+simulation_tacto/.hydra
+*.pyc
+*.log
+

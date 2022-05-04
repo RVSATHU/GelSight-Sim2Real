@@ -1,0 +1,42 @@
+tacto:
+  width: 320
+  height: 320
+  visualize_gui: true
+  config_path: conf/config_thusight.yml
+thusight:
+  urdf_path: objects/THUsight.urdf
+  base_position:
+  - 0
+  - 0
+  - 0
+  base_orientation:
+  - 0.0
+  - -0.707106
+  - 0.0
+  - 0.707106
+  use_fixed_base: true
+object:
+  urdf_path: objects/sphere_small.urdf
+  base_position:
+  - 0
+  - 0
+  - 0.1
+  global_scaling: 1
+object_control_panel:
+  slider_params:
+    position_low:
+    - -0.02
+    - -0.02
+    - 0.03
+    position_high:
+    - 0.02
+    - 0.02
+    - 0.08
+pybullet_camera:
+  cameraDistance: 0.12
+  cameraYaw: 90.0
+  cameraPitch: -45.0
+  cameraTargetPosition:
+  - 0
+  - 0
+  - 0
