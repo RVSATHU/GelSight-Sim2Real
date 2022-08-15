@@ -1,4 +1,4 @@
-#Code repository of paper entitled "Bidirectional Sim-to-Real Transfer for GelSight Tactile Sensors with CycleGAN"
+# Code repository of paper entitled "Bidirectional Sim-to-Real Transfer for GelSight Tactile Sensors with CycleGAN"
 
 ## Introduction
 
@@ -29,4 +29,12 @@ In the compressed file, A is the real dataset while B is the simulation set. The
 
 ## Examples of Real2Sim depth reconstruction
 
-This repo is under construction...
+Please run 'depth_reconstruction/calibrate_and_quantitatively_compare_depth.py'.
+
+This script will first preform calibration and generate two LUTs. Then, depth maps will be reconstructed using the calibrated LUT. Depth maps from Real images and Real2Sim images will be compared to show the reconstruction error.
+
+We would like to note that most of the code in this part is from [GelSlim 3.0](https://github.com/mcubelab/gelslim).
+
+## CycleGAN Training and data generation using trained generators
+
+In this research, we changed very little of CycleGAN. Please refer to the appendix file of pur paper for detailed training settings.
